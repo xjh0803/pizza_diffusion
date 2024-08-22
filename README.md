@@ -2,24 +2,21 @@
 
 convert rlds to zarr
 1. rlds to hdf5
+
+2. hdf5 to zarr
+
+这时目录结构为
 ```
-├── config.yaml
-├── metrics
-│   └── logs.json.txt
-├── train_0
-│   ├── checkpoints
-│   │   ├── epoch=0300-test_mean_score=1.000.ckpt
-│   │   └── latest.ckpt
-│   └── logs.json.txt
-├── train_1
-│   ├── checkpoints
-│   │   ├── epoch=0250-test_mean_score=1.000.ckpt
-│   │   └── latest.ckpt
-│   └── logs.json.txt
-└── train_2
-    ├── checkpoints
-    │   ├── epoch=0250-test_mean_score=1.000.ckpt
-    │   └── latest.ckpt
-    └── logs.json.txt
+├── action
+├── img
+├── episode_ends
+
 ```
-3. hdf5 to zarr
+需要手动调整为类似pusht_cchi_v7_replay.zarr样式
+```
+├── data
+│ ├── action
+│ └── img
+├── meta
+│ ├── episode_ends
+```
