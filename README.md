@@ -13,7 +13,6 @@ pip install h5py
 ├── action
 ├── img
 ├── episode_ends
-
 ```
 需要手动调整为类似pusht_cchi_v7_replay.zarr样式
 ```
@@ -33,7 +32,7 @@ pip install h5py
     ├── env
       └── pizza_env.py
       └── pizza_image_env.py
-
+├── pizza_diffusion_policy.yaml
 ```
 
 run
