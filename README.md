@@ -23,6 +23,24 @@ pip install h5py
 ├── meta
 │ ├── episode_ends
 ```
+主要改动文件：
+```
+├── diffusion_policy
+├── ├── dataset
+│   └── pizza_dataset.py
+├── ├── env_runner
+│   └── pizza_image_runner.py
+├── train_1
+│ ├── checkpoints
+│ │ ├── epoch=0250-test_mean_score=1.000.ckpt
+│ │ └── latest.ckpt
+│ └── logs.json.txt
+└── train_2
+├── checkpoints
+│ ├── epoch=0250-test_mean_score=1.000.ckpt
+│ └── latest.ckpt
+└── logs.json.txt
+```
 
 run
 ```
