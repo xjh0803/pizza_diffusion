@@ -2,7 +2,7 @@
 
 convert rlds to zarr
 1. rlds to hdf5
-
+```
 ├── config.yaml
 ├── metrics
 │   └── logs.json.txt
@@ -21,4 +21,5 @@ convert rlds to zarr
     │   ├── epoch=0250-test_mean_score=1.000.ckpt
     │   └── latest.ckpt
     └── logs.json.txt
+```
 3. hdf5 to zarr
